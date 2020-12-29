@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+  @apply font-rale py-2 px-4 rounded;
+}
+
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+
+.title {
+  @apply text-4xl text-blue-700 font-bold;
+}
+
+/*# sourceMappingURL=style.css.map */
