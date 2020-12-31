@@ -1,8 +1,9 @@
-@import "fonts";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "button";
-@import "title";
+@layer components {
+  .nav-link {
+    @apply transition-transform transform hover:scale-110;
+  }
+}

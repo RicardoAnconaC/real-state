@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/_fonts.scss","../sass/style.scss","../sass/_button.scss","../sass/_title.scss"],"names":[],"mappings":"AAAQ;ACER;AACA;AACA;ACJA;AAEA;EACE;;;AAGF;EACE;;;AAGF;EACE;;;ACXF;AAEA;EACE","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/style.scss"],"names":[],"mappings":"AAAA;AACA;AACA;AAEA;EACE;IACE","file":"style.css"}

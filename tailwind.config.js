@@ -3,13 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: {
-        danger: '#ff5f40',
-        info: {
-          900: '#234e52',
-          800: '#285e61',
-        }
+      spacing: {
+        '120': '30rem',
       },
+      backgroundImage: theme => ({
+        'big-house': "url('../images/big_house.jpg')",
+       })
     },
     fontFamily: {
       rale: ['Raleway'],

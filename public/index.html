@@ -1,15 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inmobiliaria | Inicio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>INmobi | Inicio</title>
+  <link rel="stylesheet" href="./assets/css/swiperjs.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/pruebas.css">
+  <script src="https://kit.fontawesome.com/3c2b369f6b.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <h1 class="title">Lorem, ipsum dolor.</h1>
-  <h2>Lorem, ipsum dolor.</h2>
-  <h3>Lorem ipsum dolor sit.</h3>
-  <button class="btn btn-blue m-20">HOLA</button>
+<body class="h-full">
+
+  <header class="bg-transparent absolute w-full">
+    <div class="max-w-screen-2xl p-6 h-full mx-auto flex justify-between items-center">
+      <!-- logo -->
+      <a href="." class="flex items-center text-white">
+        <i class="fas fa-campground text-5xl mr-4"></i>
+        <div class="text-3xl">
+          <strong>IN</strong><span>mobi</span>
+        </div>
+      </a>
+      <!-- navigation bar -->
+      <nav class="h-full w-7/12">
+        <ul class="flex items-center justify-evenly w-full h-full font-semibold text-white">
+          <li class="nav-link">
+            <a href="#">INICIO</a>
+          </li> 
+          <li class="nav-link">
+            <a href="#">PROPIEDADES</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">TERRENOS</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">NOSOTROS</a>
+          </li>
+          <li class="nav-link">
+            <a href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- login -->
+      <a href="#" class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
+        <span class="text-xl">Iniciar sesión</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="h-screen w-full bg-big-house bg-cover bg-center bg-no-repeat">
+  </div>
+
+  <section class="text-center">
+    <h2 class="py-12 text-4xl font-light">Destacados</h2>
+  </section>
+
+  <div class="swiper-container bg-green-100 w-8/12 max-w-screen-2xl mx-auto">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide tw-slider">Slide 1</div>
+      <div class="swiper-slide tw-slider">Slide 2</div>
+      <div class="swiper-slide tw-slider">Slide 3</div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <footer class="h-96 bg-black mt-24 text-white">
+    <h1 class="pt-8 text-center text-4xl">footer</h1>
+  </footer>
+
+  <script src="./assets/js/swiperjs.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>
