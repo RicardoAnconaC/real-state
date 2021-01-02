@@ -5,6 +5,14 @@
   .nav-link {
     @apply transition-transform transform hover:scale-110;
   }
+
+  .swiper-pagination-bullet {
+    @apply mx-1 h-2.5 w-2.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-blue-700;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

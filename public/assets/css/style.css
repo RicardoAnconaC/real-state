@@ -602,6 +602,18 @@ video {
   transition-duration: 150ms;
 }
 
+.swiper-pagination-bullet {
+  height: 0.625rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  width: 0.625rem;
+}
+
+.swiper-pagination-bullet-active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
