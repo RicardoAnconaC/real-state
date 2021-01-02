@@ -11,16 +11,17 @@
 </head>
 <body class="h-full">
 
-  <header class="bg-transparent absolute w-full">
+  <!-- Header -->
+  <header class="bg-transparent absolute w-full z-50">
     <div class="max-w-screen-2xl p-6 h-full mx-auto flex justify-between items-center">
-      <!-- logo -->
+      <!-- Logo -->
       <a href="." class="flex items-center text-white">
         <i class="fas fa-campground text-5xl mr-4"></i>
         <div class="text-3xl">
           <strong>IN</strong><span>mobi</span>
         </div>
       </a>
-      <!-- navigation bar -->
+      <!-- Navigation links -->
       <nav class="h-full w-7/12">
         <ul class="flex items-center justify-evenly w-full h-full font-semibold text-white">
           <li class="nav-link">
@@ -40,36 +41,89 @@
           </li>
         </ul>
       </nav>
-      <!-- login -->
+      <!-- Login -->
       <a href="#" class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
         <span class="text-xl">Iniciar sesión</span>
       </a>
     </div>
-  </header>
+  </header><!-- END Header -->
 
-  <div class="h-screen w-full bg-big-house bg-cover bg-center bg-no-repeat">
-  </div>
+  <!-- Big image container -->
+  <section class="relative flex flex-col h-screen w-full bg-big-house bg-cover bg-center bg-no-repeat">
+    <h1 class="relative top-52 text-center text-white text-7xl font-light">LA PROPIEDAD DE TUS SUEÑOS</h1>
+    <!-- Search forms container -->
+    <div class="relative top-1/2 w-6/12 max-w-4xl mx-auto">
+      <div class="h-16 bg-blue-900 text-white flex">
+        <button class="h-full px-4 tracking-widest text-xl tablink bg-blue-400 hover:bg-yellow-500" onclick="openContainer(event,'venta')">VENTA</button>
+        <button class="h-full px-4 tracking-widest text-xl tablink hover:bg-yellow-500" onclick="openContainer(event,'renta')">RENTA</button>
+      </div>
+      <!-- Venta search form -->
+      <div id="venta" class="search-form bg-white">
+        <form class="flex justify-evenly items-center h-28">
+          <div class="flex flex-col">
+            <label for="tipo" class="mb-2">¿Qué buscas?</label>
+            <select name="tipo" id="tipo" class="border-2 border-gray-400 h-12 px-2">
+              <option disabled selected value> -- Escoger tipo de inmueble -- </option>
+              <option value="todas">Todas</option>
+              <option value="comercial">Comercial</option>
+              <option value="terreno">Terreno</option>
+              <option value="casa">Casa</option>
+              <option value="terreno">Departamento</option>
+              <option value="departamento">Oficinas</option>
+            </select>
+          </div>
+          <div class="flex flex-col">
+            <label for="ubicacion" class="mb-2">Ubicación</label>
+            <input type="text" name="ubicacion" placeholder="Ciudad, estado o clave" class="border-2 border-gray-400 h-12 px-2">
+          </div>
+          <button type="submit" class="py-2 px-4 bg-yellow-500 text-white text-xl tracking-widest rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-75">Buscar</button>
+        </form>
+      </div><!-- END Venta search form -->
+      <!-- Renta search form -->
+      <div id="renta" class="search-form bg-white hidden">
+        <form class="flex justify-evenly items-center h-28">
+          <div class="flex flex-col">
+            <label for="tipo" class="mb-2">¿Qué buscas?</label>
+            <select name="tipo" id="tipo" class="border-2 border-gray-400 h-12 px-2">
+              <option disabled selected value> -- Escoger tipo de inmueble -- </option>
+              <option value="todas">Todas</option>
+              <option value="comercial">Comercial</option>
+              <option value="terreno">Terreno</option>
+              <option value="casa">Casa</option>
+              <option value="terreno">Departamento</option>
+              <option value="departamento">Oficinas</option>
+            </select>
+          </div>
+          <div class="flex flex-col">
+            <label for="ubicacion" class="mb-2">Ubicación</label>
+            <input type="text" name="ubicacion" placeholder="Ciudad, estado o clave" class="border-2 border-gray-400 h-12 px-2">
+          </div>
+          <button type="submit" class="py-2 px-4 bg-yellow-500 text-white text-xl tracking-widest rounded-lg shadow-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-opacity-75">Buscar</button>
+        </form>
+      </div><!-- END Renta search form -->
+    </div><!-- END Search form container -->
+  </section><!-- END Big image container -->
 
+  <!-- Destacados section -->
   <section class="text-center">
     <h2 class="py-12 text-4xl font-light">Destacados</h2>
-  </section>
+    <!-- Carousel container -->
+    <div class="swiper-container bg-green-100 w-8/12 max-w-screen-2xl mx-auto">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tw-slider">Slide 1</div>
+        <div class="swiper-slide tw-slider">Slide 2</div>
+        <div class="swiper-slide tw-slider">Slide 3</div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div><!-- END Carousel container -->
+  </section><!-- END Destacados section -->
 
-  <div class="swiper-container bg-green-100 w-8/12 max-w-screen-2xl mx-auto">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide tw-slider">Slide 1</div>
-      <div class="swiper-slide tw-slider">Slide 2</div>
-      <div class="swiper-slide tw-slider">Slide 3</div>
-    </div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <div class="swiper-pagination"></div>
-  </div>
-
+  <!-- Footer -->
   <footer class="h-96 bg-black mt-24 text-white">
     <h1 class="pt-8 text-center text-4xl">footer</h1>
-  </footer>
+  </footer><!-- END Footer -->
 
   <script src="./assets/js/swiperjs.js"></script>
   <script src="./assets/js/main.js"></script>
