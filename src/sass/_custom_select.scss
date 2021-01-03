@@ -1,13 +1,4 @@
-ul.breadcrumb li+li:before {
-  padding: 2px;
-  content: "/\00a0";
-  color: #8D8E8E;
-  font-size: 0.75rem;
-}
-
-
-
-
+/* CUSTOM SELECT-OPTIONS */
 
 .custom-select {
   position: relative;
@@ -77,28 +68,4 @@ ul.breadcrumb li+li:before {
 
 .same-as-selected:hover {
   color: #000;
-}
-
-
-
-
-
-
-.ui-widget-header {
-  background: #93d4ff;
-}
-
-.ui-state-default,
-.ui-widget-content .ui-state-default,
-.ui-widget-header .ui-state-default,
-.ui-button,
-html .ui-button.ui-state-disabled:hover,
-html .ui-button.ui-state-disabled:active {
-  border-radius: 50%;
-  border: none !important;
-  background: #0075ad !important;
-  font-weight: normal;
-  color: unset;
-  outline: none !important;
-  cursor: pointer !important;
 }

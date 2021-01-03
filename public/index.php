@@ -5,8 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INmobi | Inicio</title>
   <link rel="stylesheet" href="./assets/css/swiperjs.css">
+  <style>
+    .swiper-pagination-bullet {
+      margin: 0 0.25rem;
+      height: 0.65rem;
+      width: 0.65rem;
+    }
+    .swiper-pagination-bullet:focus {
+      outline: none !important;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #3B82F6;
+    }
+  </style>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/pruebas.css">
   <script src="https://kit.fontawesome.com/3c2b369f6b.js" crossorigin="anonymous"></script>
 </head>
 <body class="h-full">
@@ -80,6 +92,40 @@
   <?php include 'footer.php'; ?>
 
   <script src="./assets/js/swiperjs.js"></script>
-  <script src="./assets/js/main.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script>
+    function openContainer(evt, condition) {
+    var i, x, tablinks;
+
+    x = document.getElementsByClassName("search-form");
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.add("hidden");
+    }
+
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" bg-blue-400", "");
+    }
+
+    document.getElementById(condition).classList.replace("hidden", "block");
+    evt.currentTarget.className += " bg-blue-400";
+    }
+  </script>
 </body>
 </html>

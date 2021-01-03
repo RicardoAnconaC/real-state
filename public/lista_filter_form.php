@@ -62,7 +62,23 @@
     <div id="slider-range-size"></div>
   </div>
 
-  <p class="cursor-pointer text-left mb-6" onclick="alert('hello')"><span class="font-bold text-2xl text-blue-600">+</span> Otras características</p>
+  <p class="text-left mb-6">Otras características</p>
+  <div id="checkboxes" class="mb-12">
+    <ul>
+      <li><input type="checkbox" class="pl-2 mb-4"> Aire acondicionado</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Lavandería</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Refrigerador</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Lavadora</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Asador</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Sauna</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> WiFi</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Secadora</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Microondas</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Gimnasio</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> Regadera de patio</li>
+      <li><input type="checkbox" class="pl-2 mb-4"> TV Cable</li>
+    </ul>
+  </div>
 
   <button href="#" class="py-2 px-4 w-full bg-blue-500 text-white font-semibold shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
     <span class="text-lg tracking-widest">BUSCAR</span>
