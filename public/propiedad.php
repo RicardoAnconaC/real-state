@@ -66,10 +66,229 @@
 
   <h1 class="text-5xl font-semibold text-black max-w-screen-2xl mx-auto pt-8 pb-16 px-12">Casa en Villas Altas</h1>
 
-  <main class="bg-gray-100 h-screen mb-24">
-    <!-- Swiper -->
-    <?php include 'propiedad_swiper.php'; ?>
-  </main>
+  <main class="bg-gray-100 mb-24">
+    <section class="relative h-screen max-w-screen-2xl mx-auto">
+      <?php include 'propiedad_swiper.php';  // Carousel ?>
+    </section>
+
+    <section class="max-w-screen-2xl mx-auto">
+      <article class="flex flex-row p-6">
+        <div class="w-2/3 mr-4 p-6 border-2 border-black">
+          <div class="flex flex-row items-center justify-start mb-8">
+            <p class="bg-yellow-500 py-1 px-4 mr-6 text-white font-semibold tracking-widest">FEATURED</p>
+            <p class="bg-blue-500 py-1 px-4 mr-6 text-white font-semibold tracking-widest">EN VENTA</p>
+            <p class="mr-6 text-gray-600"><i class="far fa-clock mr-1"></i>Hace 2 meses</p>
+            <p class="text-gray-600"><i class="far fa-eye mr-1"></i>1039 visitas</p>
+          </div>
+          <div class="flex flex-row items-center justify-between mb-12">
+            <div class="flex flex-col">
+              <h1 class="text-4xl font-semibold text-gray-900 mb-4">Casa en Villas Altas</h1>
+              <p class="text-gray-600"><i class="fas fa-map-marker-alt mr-1"></i>398 Pete Pascale Pl, New York</p>
+            </div>
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-semibold text-gray-900 mb-4">$1,250,000</h1>
+              <p class="text-gray-600">$9,350/m2</p>
+            </div>
+          </div>
+          <div class="flex flex-col mb-16">
+            <h1 class="text-2xl font-semibold text-gray-900 mb-4">Descripción</h1>
+            <p class="text-gray-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam cupiditate debitis iste autem eaque quidem commodi officiis voluptas quo omnis consectetur est reiciendis nemo earum quod deserunt, voluptatum sint ipsum, aut laboriosam fugiat porro! Quo earum, saepe beatae delectus ut corporis dignissimos eligendi expedita. Voluptatibus necessitatibus ipsam numquam culpa laborum debitis cum dolore natus? Reprehenderit hic fugiat autem distinctio. Provident?</p>
+          </div>
+          <div class="flex flex-col mb-12">
+            <h1 class="text-2xl font-semibold text-gray-900 mb-4">Características</h1>
+            <div class="text-gray-900 flex flex-row flex-wrap">
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">TIPO</h5>
+                  <p class="font-semibold">Una familia</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">AÑO DE CONSTRUCCIÓN</h5>
+                  <p class="font-semibold">2020</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">CALEFACCIÓN</h5>
+                  <p class="font-semibold">Calor radiante</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">METROS CUADRADOS</h5>
+                  <p class="font-semibold">979.0</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">HABITACIONES</h5>
+                  <p class="font-semibold">3</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">BAÑOS</h5>
+                  <p class="font-semibold">2</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">GARAGE</h5>
+                  <p class="font-semibold">1</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><i class="far fa-question-circle"></i></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="tracking-wider">STATUS</h5>
+                  <p class="font-semibold">Active</p>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="flex flex-col mb-16">
+            <h1 class="text-2xl font-semibold text-gray-900 mb-4">Tour virtual</h1>
+            <div class="flex flex-row justify-center my-4">
+              <iframe width="700" height="500" src="https://www.youtube.com/embed/M8KgSa-r4TU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="flex flex-col mb-16">
+            <h1 class="text-2xl font-semibold text-gray-900">Ubicación</h1>
+            <div class="flex flex-row justify-center my-4">
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="700" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net">embed google map</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:700px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:700px;}</style></div>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/3 p-6 border-2 border-black">Hacer una cita</div>
+      </article>
+    </section>
+    <!-- Similar homes section -->
+    <section class="text-center max-w-7xl mx-auto relative">
+      <h2 class="py-12 text-4xl font-light">Propiedades similares que pueden gustarte</h2>
+      <div class="flex flex-row justify-evenly max-w-screen-2xl mx-auto">
+        <div class="bg-white p-4 mx-6 shadow-2xl w-1/3">
+          <img src="./assets/images/venta/properties-grid-01.jpg" alt="propiedad 1" class="w-full">
+          <div class="flex flex-col justify-evenly">
+            <h2 class="font-bold text my-2 text-xl">Casa en Villas Altas</h2>
+            <h3 class="text-gray-500 italic mb-2">1421 San Pedro St, Los Angeles</h3>
+            <div class="flex flex-col w-max mx-auto text-left justify-evenly">
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bed w-full"></i>
+                </div>
+                <span>3 cuartos</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bath w-full"></i>
+                </div>
+                <span>3 baños</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-ruler-combined w-full"></i>
+                </div>
+                <span>2300 m2</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-warehouse w-full"></i>
+                </div>
+                <span>1 garage</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-6 px-8 text-xl">
+              <p class="font-bold">$1,500,000</p>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-4 mx-6 shadow-2xl w-1/3">
+          <img src="./assets/images/venta/properties-grid-02.jpg" alt="propiedad 1" class="w-full">
+          <div class="flex flex-col justify-evenly">
+            <h2 class="font-bold text my-2 text-xl">Casa en Villas Altas</h2>
+            <h3 class="text-gray-500 italic mb-2">1421 San Pedro St, Los Angeles</h3>
+            <div class="flex flex-col w-max mx-auto text-left justify-evenly">
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bed w-full"></i>
+                </div>
+                <span>3 cuartos</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bath w-full"></i>
+                </div>
+                <span>3 baños</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-ruler-combined w-full"></i>
+                </div>
+                <span>2300 m2</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-warehouse w-full"></i>
+                </div>
+                <span>1 garage</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-6 px-8 text-xl">
+              <p class="font-bold">$1,500,000</p>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white p-4 mx-6 shadow-2xl w-1/3">
+          <img src="./assets/images/venta/properties-grid-03.jpg" alt="propiedad 1" class="w-full">
+          <div class="flex flex-col justify-evenly">
+            <h2 class="font-bold text my-2 text-xl">Casa en Villas Altas</h2>
+            <h3 class="text-gray-500 italic mb-2">1421 San Pedro St, Los Angeles</h3>
+            <div class="flex flex-col w-max mx-auto text-left justify-evenly">
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bed w-full"></i>
+                </div>
+                <span>3 cuartos</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-bath w-full"></i>
+                </div>
+                <span>3 baños</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-ruler-combined w-full"></i>
+                </div>
+                <span>2300 m2</span>
+              </div>
+              <div>
+                <div class="w-6 text-blue-800 inline-block">
+                  <i class="fas fa-warehouse w-full"></i>
+                </div>
+                <span>1 garage</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-6 px-8 text-xl">
+              <p class="font-bold">$1,500,000</p>
+              <i class="far fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- END Destacados section -->
+    </main>
 
   <!-- Footer -->
   <?php include 'footer.php'; ?>
