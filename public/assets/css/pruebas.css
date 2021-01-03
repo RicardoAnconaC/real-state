@@ -20,13 +20,14 @@ ul.breadcrumb li+li:before {
 
 .select-selected {
   background-color: rgb(229, 231, 235);
+  padding-right: 1.5rem !important;
 }
 
 /*style the arrow inside the select element:*/
-.select-selected:after {
+.select-selected::after {
   position: absolute;
   content: "";
-  top: 14px;
+  top: 18px;
   right: 10px;
   width: 0;
   height: 0;
@@ -35,7 +36,7 @@ ul.breadcrumb li+li:before {
 }
 
 /*point the arrow upwards when the select box is open (active):*/
-.select-selected.select-arrow-active:after {
+.select-selected.select-arrow-active::after {
   border-color: transparent transparent #333 transparent;
   top: 7px;
 }

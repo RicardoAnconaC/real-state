@@ -71,8 +71,25 @@
       </aside>
       <div class="w-2/3 mr-8 flex flex-col">
         <div class="flex items-center justify-between pt-2 pb-6">
-          <p class="py-2 px-4">Encontramos <strong class="text-blue-700">45</strong> propiedades disponibles para ti</p>
-          <div class="py-2 bg-white">ORDENAR POR:</div>
+          <p class="py-2 px-4 text-lg">Encontramos <strong class="text-blue-700">45</strong> propiedades disponibles para ti</p>
+          <div class="py-2 px-4 bg-white flex items-center">
+            <i class="fas fa-align-left pr-2"></i>
+            <p class="pr-2">ORDENAR POR:</p>
+            <div class="flex items-center">
+              <div class="custom-select">
+                <select>
+                  <option selected value="Top ventas">Top ventas</option>
+                  <option value="Más vistos">Más vistos</option>
+                  <option value="Precio (descendente)">Precio (descendente)</option>
+                  <option value="Precio (ascendente)">Precio (ascendente)</option>
+                </select>
+              </div>
+              <div class="pl-6 w-20 flex items-center justify-between">
+                <button><i class="fas fa-list text-xl"></i></button>
+                <button><i class="fas fa-th-large text-xl opacity-25"></i></button>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="bg-white h-screen">
         </div>
