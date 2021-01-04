@@ -288,7 +288,7 @@
         </div>
       </div>
     </section><!-- END Destacados section -->
-    </main>
+  </main>
 
   <!-- Footer -->
   <?php include 'footer.php'; ?>
