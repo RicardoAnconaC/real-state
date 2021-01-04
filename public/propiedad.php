@@ -27,7 +27,7 @@
   <header class="bg-transparent absolute w-full z-50">
     <div class="max-w-screen-2xl p-6 h-full mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <a href="." class="flex items-center text-blue-900">
+      <a href="index.php" class="flex items-center text-blue-900">
         <i class="fas fa-campground text-5xl mr-4"></i>
         <div class="text-3xl">
           <strong>IN</strong><span>mobi</span>
@@ -43,15 +43,15 @@
             <a href="list.php">PROPIEDADES</a>
           </li>
           <li class="nav-link">
-            <a href="#">NOSOTROS</a>
+            <a href="about.php">NOSOTROS</a>
           </li>
           <li class="nav-link">
-            <a href="#">CONTACTO</a>
+            <a href="contact.php">CONTACTO</a>
           </li>
         </ul>
       </nav>
       <!-- Login -->
-      <a href="#" class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
+      <a href="login.php" class="py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75">
         <span class="text-xl">Iniciar sesión</span>
       </a>
     </div>

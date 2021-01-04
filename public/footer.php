@@ -2,7 +2,7 @@
   <div class="max-w-screen-2xl mx-auto py-16 px-12 mt-24 text-gray-300">
     <section class="flex justify-evenly">
       <div class="w-3/12 flex flex-col">
-        <a href="." class="flex items-center mb-6 w-max">
+        <a href="index.php" class="flex items-center mb-6 w-max">
           <i class="fas fa-campground text-5xl mr-4"></i>
           <div class="text-3xl">
             <strong>IN</strong><span>mobi</span>
