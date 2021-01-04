@@ -88,6 +88,34 @@
     <div class="swiper-pagination relative mx-auto mt-4"></div>
   </section><!-- END Destacados section -->
 
+  <!-- Explorar por tipo -->
+  <section class="h-4/6 w-full mx-auto max-w-screen-2xl p-6 mt-12 flex flex-row items-center justify-between">
+    <div class="flex flex-col max-w-md ml-20">
+      <h2 class="font-semibol text-4xl mb-6">Explorar por<br>tipo de propiedad</h2>
+      <div class="h-1 w-24 bg-blue-300 mb-8"></div>
+      <p class="mb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fuga porro harum laboriosam.</p>
+      <a href="#" class="py-2 px-4 bg-gray-200 font-semibold text-blue-500 w-max transition-colors hover:bg-gray-300 hover:text-blue-800">+2000 propiedades disponibles ></a>
+    </div>
+    <div class="flex flex-row flex-wrap items-center">
+      <a href="#" class="h-48 w-48 hover:shadow-2xl flex flex-col items-center justify-center m-4">
+        <img src="./assets/images/tipos/sofa.png" alt="Casa" class="mb-4">
+        <h4 class="font-semibold text-gray-700 text-lg">Casa</h4>
+      </a>
+      <a href="#" class="h-48 w-48 hover:shadow-2xl flex flex-col items-center justify-center m-4">
+        <img src="./assets/images/tipos/city.png" alt="Oficinas" class="mb-4">
+        <h4 class="font-semibold text-gray-700 text-lg">Oficinas</h4>
+      </a>
+      <a href="#" class="h-48 w-48 hover:shadow-2xl flex flex-col items-center justify-center m-4">
+        <img src="./assets/images/tipos/house.png" alt="Villa" class="mb-4">
+        <h4 class="font-semibold text-gray-700 text-lg">Villa</h4>
+      </a>
+      <a href="#" class="h-48 w-48 hover:shadow-2xl flex flex-col items-center justify-center m-4">
+        <img src="./assets/images/tipos/two_buildings.png" alt="Departamento" class="mb-4">
+        <h4 class="font-semibold text-gray-700 text-lg">Departamento</h4>
+      </a>
+    </div>
+  </section><!-- END Explorar por tipo -->
+
   <!-- Footer -->
   <?php include 'footer.php'; ?>
 

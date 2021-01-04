@@ -56,6 +56,15 @@
     <h1 class="relative top-52 text-center text-white text-7xl font-light">TU EQUIPO DE CONFIANZA</h1>
   </section><!-- END Big image container -->
 
+  <section class="flex flex-row max-w-screen-2xl mx-auto h-5/6 w-full pt-20 px-8">
+    <div class="h-full w-1/3 bg-cover bg-top bg-no-repeat border-2 border-gray-200" style="background-image: url(./assets/images/propiedad/003.jpg);"></div>
+    <div class="w-2/3 flex flex-col px-40">
+      <h2 class="text-center text-gray-700 text-4xl font-semibold pt-20 mb-12">Nuestra historia</h2>
+      <p class="text-gray-700 text-xl mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa accusamus fuga necessitatibus quibusdam ipsa officiis velit eos, odit est, rem quidem. Corporis fuga libero, nam blanditiis quisquam facere harum enim eius ad. Vel cupiditate corrupti tempora veritatis provident cum sit consequatur aut laboriosam laborum repudiandae voluptatum rem quo delectus, nesciunt natus commodi voluptas dolorem sequi optio. Assumenda vitae nobis accusamus!</p>
+      <p class="text-gray-700 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa accusamus fuga necessitatibus quibusdam ipsa officiis velit eos, odit est, rem quidem. Corporis fuga libero, nam blanditiis quisquam facere harum enim eius ad. Vel cupiditate corrupti tempora veritatis provident cum sit consequatur aut laboriosam laborum repudiandae voluptatum rem quo delectus, nesciunt natus commodi voluptas dolorem sequi optio. Assumenda vitae nobis accusamus!</p>
+    </div>
+  </section>
+
   <!-- Footer -->
   <?php include 'footer.php'; ?>
 
