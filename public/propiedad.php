@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INmobi | Casa en Villas Altas</title>
+  <link rel="stylesheet" href="./assets/css/mtr-datepicker.min.css">
+  <link rel="stylesheet" href="./assets/css/mtr-datepicker.default-theme.min.css">
   <link rel="stylesheet" href="./assets/css/swiperjs.css">
   <style>
     .gallery-thumbs .swiper-slide-thumb-active {
@@ -72,8 +74,8 @@
     </section>
 
     <section class="max-w-screen-2xl mx-auto">
-      <article class="flex flex-row p-6">
-        <div class="w-2/3 mr-4 p-6 border-2 border-black">
+      <article class="flex flex-row items-start p-6">
+        <div class="w-2/3 mr-4 p-6">
           <div class="flex flex-row items-center justify-start mb-8">
             <p class="bg-yellow-500 py-1 px-4 mr-6 text-white font-semibold tracking-widest">FEATURED</p>
             <p class="bg-blue-500 py-1 px-4 mr-6 text-white font-semibold tracking-widest">EN VENTA</p>
@@ -153,7 +155,7 @@
                   <p class="font-semibold">Active</p>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
           <div class="flex flex-col mb-16">
             <h1 class="text-2xl font-semibold text-gray-900 mb-4">Tour virtual</h1>
@@ -168,10 +170,51 @@
             </div>
           </div>
         </div>
-        <div class="w-1/3 p-6 border-2 border-black">Hacer una cita</div>
+        <div class="w-1/3 p-6 sticky top-12">
+          <div class="h-16 bg-blue-900 text-white flex justify-center">
+            <button class="h-full px-4 tracking-widest text-xl tablink bg-blue-400 hover:bg-yellow-500" onclick="openContainer(event,'agendar')">Agendar visita</button>
+            <button class="h-full px-4 tracking-widest text-xl tablink hover:bg-yellow-500" onclick="openContainer(event,'info')">Pedir informes</button>
+          </div>
+          <div id="agendar" class="search-form bg-white flex flex-col px-12 pb-12">
+            <!-- Form -->
+            <div id="demo"></div>
+            <input type="text" placeholder="Nombre completo" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+            <input type="email" placeholder="E-mail" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+            <input type="phone" placeholder="Teléfono" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+            <button href="#" class="py-2 px-4 w-full bg-blue-500 text-white font-semibold shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+              <span class="tracking-widest">AGENDAR</span>
+            </button>
+          </div>
+          <div id="info" class="search-form bg-white hidden px-12 pb-12">
+            <div class="text-gray-900 flex flex-col">
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><img src="./assets/images/expertos/agent-1.jpg" alt="agent 1" class="h-12 w-12"></div>
+                <div class="flex flex-col ml-4">
+                  <h5 class="font-semibold">Oliver Yánez</h5>
+                  <p class="tracking-wider">Ejecutivo de ventas</p>
+                  <p class="tracking-wider">(+123) 1900 68668</p>
+                </div>
+              </div>
+              <div class="flex flex-row items-center my-2 py-2 px-4 w-72">
+                <div class="text-blue-500 text-5xl"><img src="./assets/images/expertos/agent-2.jpg" alt="agent 2" class="h-12 w-12"></div>
+                <div class="flex flex-col ml-4">
+                <h5 class="font-semibold">Oliver Yánez</h5>
+                  <p class="tracking-wider">Ejecutivo de ventas</p>
+                  <p class="tracking-wider">(+123) 1900 68668</p>
+                </div>
+              </div>
+              <input type="text" placeholder="Nombre completo" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+              <input type="email" placeholder="E-mail" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+              <input type="phone" placeholder="Teléfono" class="h-12 bg-gray-200 mb-6 px-4 focus:outline-none">
+              <button href="#" class="py-2 px-4 w-full bg-blue-500 text-white font-semibold shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75">
+                <span class="tracking-widest">PEDIR INFORMES</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </article>
     </section>
-    <!-- Similar homes section -->
+    <!-- Similar section -->
     <section class="text-center max-w-7xl mx-auto relative">
       <h2 class="py-12 text-4xl font-light">Propiedades similares que pueden gustarte</h2>
       <div class="flex flex-row justify-evenly max-w-screen-2xl mx-auto">
@@ -287,14 +330,15 @@
           </div>
         </div>
       </div>
-    </section><!-- END Destacados section -->
+    </section><!-- END Similar section -->
   </main>
 
   <!-- Footer -->
   <?php include 'footer.php'; ?>
 
-  <!-- Swiper JS -->
   <script src="./assets/js/swiperjs.js"></script>
+  <script src="./assets/js/mtr-datepicker-timezones.min.js"></script>
+  <script src="./assets/js/mtr-datepicker.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -315,6 +359,30 @@
         swiper: galleryThumbs
       }
     });
+
+    datepickerDefault = new MtrDatepicker({
+      target: "demo",
+      disableAmPm: true,
+      });
+  </script>
+
+  <script>
+    function openContainer(evt, condition) {
+    var i, x, tablinks;
+
+    x = document.getElementsByClassName("search-form");
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.add("hidden");
+    }
+
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" bg-blue-400", "");
+    }
+
+    document.getElementById(condition).classList.replace("hidden", "block");
+    evt.currentTarget.className += " bg-blue-400";
+    }
   </script>
 
 </body>

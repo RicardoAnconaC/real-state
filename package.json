@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "mtr-datepicker": "^0.3.11",
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   },
