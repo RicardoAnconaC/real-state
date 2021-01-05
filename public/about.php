@@ -61,7 +61,6 @@
     <div class="w-2/3 flex flex-col px-40">
       <h2 class="text-center text-gray-700 text-4xl font-semibold pt-20 mb-12">Nuestra historia</h2>
       <p class="text-gray-700 text-xl mb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa accusamus fuga necessitatibus quibusdam ipsa officiis velit eos, odit est, rem quidem. Corporis fuga libero, nam blanditiis quisquam facere harum enim eius ad. Vel cupiditate corrupti tempora veritatis provident cum sit consequatur aut laboriosam laborum repudiandae voluptatum rem quo delectus, nesciunt natus commodi voluptas dolorem sequi optio. Assumenda vitae nobis accusamus!</p>
-      <p class="text-gray-700 text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa accusamus fuga necessitatibus quibusdam ipsa officiis velit eos, odit est, rem quidem. Corporis fuga libero, nam blanditiis quisquam facere harum enim eius ad. Vel cupiditate corrupti tempora veritatis provident cum sit consequatur aut laboriosam laborum repudiandae voluptatum rem quo delectus, nesciunt natus commodi voluptas dolorem sequi optio. Assumenda vitae nobis accusamus!</p>
     </div>
   </section>
 

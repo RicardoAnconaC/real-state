@@ -170,7 +170,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/3 p-6 sticky top-12">
+        <div class="w-1/3 p-6 sticky top-4">
           <div class="h-16 bg-blue-900 text-white flex justify-center">
             <button class="h-full px-4 tracking-widest text-xl tablink bg-blue-400 hover:bg-yellow-500" onclick="openContainer(event,'agendar')">Agendar visita</button>
             <button class="h-full px-4 tracking-widest text-xl tablink hover:bg-yellow-500" onclick="openContainer(event,'info')">Pedir informes</button>
