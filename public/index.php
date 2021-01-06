@@ -60,6 +60,10 @@
   <!-- Big image container -->
   <section class="relative flex flex-col h-screen w-full bg-big-house bg-cover bg-center bg-no-repeat">
     <h1 class="relative top-52 text-center text-white text-7xl font-light">LA PROPIEDAD DE TUS SUEÑOS</h1>
+    <div class="py-12 flex flex-col items-center justify-center">
+      <button id="ver-fecha" class="p-4 tracking-widest font-bold text-xl bg-yellow-500 hover:bg-yellow-600 relative -top-12" onclick="">VER FECHA</button>
+      <div id="mostrar-fecha" class="bg-white text-black hidden"></div>
+    </div>
     <!-- Search forms container -->
     <div class="relative top-1/2 w-6/12 max-w-4xl mx-auto">
       <div class="h-16 bg-blue-900 text-white flex">
@@ -141,21 +145,24 @@
 
   <script>
     function openContainer(evt, condition) {
-    var i, x, tablinks;
+      var i, x, tablinks;
 
-    x = document.getElementsByClassName("search-form");
-    for (i = 0; i < x.length; i++) {
-      x[i].classList.add("hidden");
-    }
+      x = document.getElementsByClassName("search-form");
+      for (i = 0; i < x.length; i++) {
+        x[i].classList.add("hidden");
+      }
 
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" bg-blue-400", "");
-    }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bg-blue-400", "");
+      }
 
-    document.getElementById(condition).classList.replace("hidden", "block");
-    evt.currentTarget.className += " bg-blue-400";
+      document.getElementById(condition).classList.replace("hidden", "block");
+      evt.currentTarget.className += " bg-blue-400";
     }
   </script>
+
+  <script src="./assets/js/GETfecha.js"></script>
+
 </body>
 </html>
