@@ -1,8 +1,0 @@
-/* BREADCRUMB */
-
-ul.breadcrumb li+li:before {
-  padding: 2px;
-  content: "/\00a0";
-  color: #8D8E8E;
-  font-size: 0.75rem;
-}
